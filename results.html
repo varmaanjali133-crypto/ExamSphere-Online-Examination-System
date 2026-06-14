@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        ExamSphere | Exam Results
+    </title>
+
+    <meta name="description"
+        content="View detailed exam results, performance analytics, score reports, and exam history on ExamSphere.">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- ===================================== -->
+    <!-- LOADER -->
+    <!-- ===================================== -->
+
+    <div class="loader">
+        <div class="loader-circle"></div>
+    </div>
+
+    <!-- ===================================== -->
+    <!-- NAVBAR -->
+    <!-- ===================================== -->
+
+    <nav class="navbar">
+
+        <div class="nav-container">
+
+            <a href="index.html" class="logo">
+
+                <div class="logo-icon">
+                    E
+                </div>
+
+                <h2>
+                    ExamSphere
+                </h2>
+
+            </a>
+
+            <div class="nav-links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="exams.html">
+                    Exams
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+            <div class="nav-actions">
+
+                <button class="theme-toggle">
+
+                    <i class="fas fa-moon"></i>
+
+                </button>
+
+                <a href="exams.html" class="btn btn-primary">
+
+                    Take Another Exam
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- ===================================== -->
+    <!-- RESULTS SECTION -->
+    <!-- ===================================== -->
+
+    <section id="resultPage" class="results-section">
+
+        <div class="container">
+
+            <div class="results-container">
+
+                <div class="result-card reveal">
+
+                    <span class="badge badge-success">
+
+                        Examination Completed
+
+                    </span>
+
+                    <h1 class="result-title">
+
+                        Your Performance Report
+
+                    </h1>
+
+                    <p id="performanceMessage" class="result-message">
+
+                        Loading performance analysis...
+
+                    </p>
+
+                    <!-- SCORE CIRCLE -->
+
+                    <div class="score-circle">
+
+                        <div class="score-content">
+
+                            <h2 id="scorePercentage">
+
+                                0%
+
+                            </h2>
+
+                            <span>
+
+                                Overall Score
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <!-- SCORE VALUE -->
+
+                    <div style="margin-top:20px;">
+
+                        <h3>
+
+                            Score:
+                            <span id="scoreValue">
+
+                                0/0
+
+                            </span>
+
+                        </h3>
+
+                    </div>
+
+                    <!-- STATS -->
+
+                    <div class="result-stats">
+
+                        <div class="result-stat">
+
+                            <h3 id="correctAnswers">
+
+                                0
+
+                            </h3>
+
+                            <p>
+
+                                Correct Answers
+
+                            </p>
+
+                        </div>
+
+                        <div class="result-stat">
+
+                            <h3 id="wrongAnswers">
+
+                                0
+
+                            </h3>
+
+                            <p>
+
+                                Wrong Answers
+
+                            </p>
+
+                        </div>
+
+                        <div class="result-stat">
+
+                            <h3 id="totalQuestions">
+
+                                0
+
+                            </h3>
+
+                            <p>
+
+                                Total Questions
+
+                            </p>
+
+                        </div>
+
+                        <div class="result-stat">
+
+                            <h3>
+
+                                <i class="fas fa-award"></i>
+
+                            </h3>
+
+                            <p>
+
+                                Certified Attempt
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <!-- ACTION BUTTONS -->
+
+                    <div style="margin-top:40px;display:flex;justify-content:center;gap:15px;flex-wrap:wrap;">
+
+                        <button id="retakeExamBtn" class="btn btn-primary">
+
+                            <i class="fas fa-rotate-right"></i>
+
+                            Retake Exam
+
+                        </button>
+
+                        <a href="exams.html" class="btn btn-outline">
+
+                            <i class="fas fa-book-open"></i>
+
+                            Browse Exams
+
+                        </a>
+
+                        <a href="index.html" class="btn btn-success">
+
+                            <i class="fas fa-house"></i>
+
+                            Dashboard
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===================================== -->
+    <!-- PERFORMANCE INSIGHTS -->
+    <!-- ===================================== -->
+
+    <section class="section">
+
+        <div class="container">
+
+            <div class="section-header reveal">
+
+                <span>
+
+                    Performance Analytics
+
+                </span>
+
+                <h2>
+
+                    Exam Insights
+
+                </h2>
+
+                <p>
+
+                    Understand your strengths,
+                    identify weak areas, and
+                    track your improvement over time.
+
+                </p>
+
+            </div>
+
+            <div class="features-grid">
+
+                <div class="feature-card reveal">
+
+                    <div class="feature-icon">
+
+                        <i class="fas fa-chart-line"></i>
+
+                    </div>
+
+                    <h3>
+
+                        Progress Tracking
+
+                    </h3>
+
+                    <p>
+
+                        Compare performance
+                        across multiple attempts
+                        and monitor growth.
+
+                    </p>
+
+                </div>
+
+                <div class="feature-card reveal">
+
+                    <div class="feature-icon">
+
+                        <i class="fas fa-bullseye"></i>
+
+                    </div>
+
+                    <h3>
+
+                        Accuracy Analysis
+
+                    </h3>
+
+                    <p>
+
+                        Review answer accuracy
+                        and focus on important
+                        concepts.
+
+                    </p>
+
+                </div>
+
+                <div class="feature-card reveal">
+
+                    <div class="feature-icon">
+
+                        <i class="fas fa-medal"></i>
+
+                    </div>
+
+                    <h3>
+
+                        Certification Ready
+
+                    </h3>
+
+                    <p>
+
+                        Practice consistently
+                        and prepare for
+                        professional assessments.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===================================== -->
+    <!-- EXAM HISTORY -->
+    <!-- ===================================== -->
+
+    <section class="section">
+
+        <div class="container">
+
+            <div class="section-header reveal">
+
+                <span>
+
+                    Historical Records
+
+                </span>
+
+                <h2>
+
+                    Previous Attempts
+
+                </h2>
+
+                <p>
+
+                    Your exam history is
+                    automatically stored using
+                    browser local storage.
+
+                </p>
+
+            </div>
+
+            <div class="glass-card reveal">
+
+                <div class="table-responsive">
+
+                    <table class="history-table">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>
+
+                                    Exam
+
+                                </th>
+
+                                <th>
+
+                                    Score
+
+                                </th>
+
+                                <th>
+
+                                    Percentage
+
+                                </th>
+
+                                <th>
+
+                                    Date
+
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody id="historyTableBody">
+
+                            <!-- Injected by JS -->
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===================================== -->
+    <!-- LEADERBOARD -->
+    <!-- ===================================== -->
+
+    <section class="section">
+
+        <div class="container">
+
+            <div class="section-header reveal">
+
+                <span>
+
+                    Rankings
+
+                </span>
+
+                <h2>
+
+                    Global Leaderboard
+
+                </h2>
+
+                <p>
+
+                    See how your performance
+                    compares with other learners.
+
+                </p>
+
+            </div>
+
+            <div class="glass-card reveal">
+
+                <div id="leaderboardList">
+
+                    <!-- Injected by JS -->
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===================================== -->
+    <!-- CTA -->
+    <!-- ===================================== -->
+
+    <section class="section">
+
+        <div class="container">
+
+            <div class="cta-card reveal">
+
+                <div class="cta-content">
+
+                    <span>
+
+                        Continue Learning
+
+                    </span>
+
+                    <h2>
+
+                        Ready For Your Next Challenge?
+
+                    </h2>
+
+                    <p>
+
+                        Explore more exams and
+                        improve your ranking with
+                        every attempt.
+
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="exams.html" class="btn btn-primary">
+
+                            Explore Exams
+
+                        </a>
+
+                        <a href="index.html" class="btn btn-outline">
+
+                            Return Home
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===================================== -->
+    <!-- FOOTER -->
+    <!-- ===================================== -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-top">
+
+                <div class="footer-grid">
+
+                    <div>
+
+                        <div class="footer-logo">
+
+                            <a href="index.html" class="logo">
+
+                                <div class="logo-icon">
+
+                                    E
+
+                                </div>
+
+                                <h2>
+
+                                    ExamSphere
+
+                                </h2>
+
+                            </a>
+
+                        </div>
+
+                        <p>
+
+                            Smart Online Examination
+                            Platform for Modern Learning.
+
+                        </p>
+
+                        <div class="footer-social">
+
+                            <a href="#" class="social-icon">
+
+                                <i class="fab fa-facebook-f"></i>
+
+                            </a>
+
+                            <a href="#" class="social-icon">
+
+                                <i class="fab fa-instagram"></i>
+
+                            </a>
+
+                            <a href="#" class="social-icon">
+
+                                <i class="fab fa-linkedin-in"></i>
+
+                            </a>
+
+                            <a href="#" class="social-icon">
+
+                                <i class="fab fa-github"></i>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div>
+
+                        <h3>
+
+                            Quick Links
+
+                        </h3>
+
+                        <ul class="footer-links">
+
+                            <li>
+                                <a href="index.html">
+                                    Home
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="exams.html">
+                                    Exams
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="about.html">
+                                    About
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="contact.html">
+                                    Contact
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <div>
+
+                        <h3>
+
+                            Platform
+
+                        </h3>
+
+                        <ul class="footer-links">
+
+                            <li>
+                                Analytics
+                            </li>
+
+                            <li>
+                                Leaderboard
+                            </li>
+
+                            <li>
+                                History
+                            </li>
+
+                            <li>
+                                Certification
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <div>
+
+                        <h3>
+
+                            Assessments
+
+                        </h3>
+
+                        <ul class="footer-links">
+
+                            <li>
+                                Java Fundamentals
+                            </li>
+
+                            <li>
+                                Web Development
+                            </li>
+
+                            <li>
+                                Aptitude Test
+                            </li>
+
+                            <li>
+                                Operating Systems
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                ©
+                <span id="currentYear"></span>
+
+                ExamSphere.
+                All Rights Reserved.
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- ===================================== -->
+    <!-- SCRIPT -->
+    <!-- ===================================== -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

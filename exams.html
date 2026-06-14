@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ExamSphere | Exams Library</title>
+
+    <meta name="description" content="Explore professional online examinations on ExamSphere.">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- LOADER -->
+
+    <div class="loader">
+        <div class="loader-circle"></div>
+    </div>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="nav-container">
+
+            <a href="index.html" class="logo">
+
+                <div class="logo-icon">E</div>
+
+                <h2>ExamSphere</h2>
+
+            </a>
+
+            <div class="nav-links">
+
+                <a href="index.html">Home</a>
+                <a href="exams.html" class="nav-active">Exams</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="login.html">Login</a>
+
+            </div>
+
+            <div class="nav-actions">
+
+                <button class="theme-toggle">
+
+                    <i class="fas fa-moon"></i>
+
+                </button>
+
+                <div id="authContainer">
+
+                    <a href="login.html" id="loginBtn" class="btn btn-primary">
+
+                        Login
+
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- PAGE HERO -->
+
+    <section class="hero">
+
+        <div class="container">
+
+            <div class="section-header reveal">
+
+                <span>
+                    Assessment Library
+                </span>
+
+                <h1>
+                    Professional Examination Catalog
+                </h1>
+
+                <p>
+
+                    Choose from industry-focused assessments
+                    designed for students, professionals,
+                    and placement preparation.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CATEGORY FILTERS -->
+
+    <section class="section">
+
+        <div class="container">
+
+            <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-bottom:40px;">
+
+                <button class="category-pill active" data-category="all">
+
+                    All Exams
+
+                </button>
+
+                <button class="category-pill" data-category="coding">
+
+                    Programming
+
+                </button>
+
+                <button class="category-pill" data-category="placement">
+
+                    Placement
+
+                </button>
+
+                <button class="category-pill" data-category="computer">
+
+                    Computer Science
+
+                </button>
+
+            </div>
+
+            <!-- EXAMS GRID -->
+
+            <div class="exams-grid">
+
+                <!-- JAVA -->
+
+                <div class="exam-card reveal" data-category="coding">
+
+                    <div class="exam-banner">
+
+                        <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=1200"
+                            alt="Java Fundamentals">
+
+                    </div>
+
+                    <div class="exam-content">
+
+                        <h3 class="exam-title">
+                            Java Fundamentals
+                        </h3>
+
+                        <p>
+                            Core Java, OOP,
+                            Collections, Threads.
+                        </p>
+
+                        <div class="exam-details">
+
+                            <div>
+                                <i class="fas fa-book"></i>
+                                Subject: Java
+                            </div>
+
+                            <div>
+                                <i class="fas fa-clock"></i>
+                                Duration: 15 Min
+                            </div>
+
+                            <div>
+                                <i class="fas fa-list"></i>
+                                Questions: 5
+                            </div>
+
+                            <div>
+                                <i class="fas fa-signal"></i>
+                                Difficulty: Beginner
+                            </div>
+
+                        </div>
+
+                        <button class="btn btn-primary" onclick="selectExam('java')">
+
+                            Start Exam
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- WEB -->
+
+                <div class="exam-card reveal" data-category="coding">
+
+                    <div class="exam-banner">
+
+                        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=1200"
+                            alt="Web Development">
+
+                    </div>
+
+                    <div class="exam-content">
+
+                        <h3 class="exam-title">
+                            Web Development
+                        </h3>
+
+                        <p>
+                            HTML, CSS, JavaScript,
+                            Responsive Design.
+                        </p>
+
+                        <div class="exam-details">
+
+                            <div>
+                                <i class="fas fa-book"></i>
+                                Subject: Frontend
+                            </div>
+
+                            <div>
+                                <i class="fas fa-clock"></i>
+                                Duration: 15 Min
+                            </div>
+
+                            <div>
+                                <i class="fas fa-list"></i>
+                                Questions: 5
+                            </div>
+
+                            <div>
+                                <i class="fas fa-signal"></i>
+                                Difficulty: Intermediate
+                            </div>
+
+                        </div>
+
+                        <button class="btn btn-primary" onclick="selectExam('web')">
+
+                            Start Exam
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- DATA STRUCTURES -->
+
+                <div class="exam-card reveal" data-category="computer">
+
+                    <div class="exam-banner">
+
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1200"
+                            alt="Data Structures">
+
+                    </div>
+
+                    <div class="exam-content">
+
+                        <h3 class="exam-title">
+                            Data Structures
+                        </h3>
+
+                        <p>
+                            Arrays, Linked Lists,
+                            Trees and Graphs.
+                        </p>
+
+                        <div class="exam-details">
+
+                            <div>
+                                Subject: DSA
+                            </div>
+
+                            <div>
+                                Duration: 20 Min
+                            </div>
+
+                            <div>
+                                Questions: 20
+                            </div>
+
+                            <div>
+                                Difficulty: Medium
+                            </div>
+
+                        </div>
+
+                        <button class="btn btn-primary" onclick="selectExam('java')">
+
+                            Start Exam
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- APTITUDE -->
+
+                <div class="exam-card reveal" data-category="placement">
+
+                    <div class="exam-banner">
+
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200" alt="Aptitude">
+
+                    </div>
+
+                    <div class="exam-content">
+
+                        <h3 class="exam-title">
+                            Aptitude Test
+                        </h3>
+
+                        <p>
+                            Quantitative aptitude,
+                            reasoning and analysis.
+                        </p>
+
+                        <div class="exam-details">
+
+                            <div>
+                                Subject: Aptitude
+                            </div>
+
+                            <div>
+                                Duration: 15 Min
+                            </div>
+
+                            <div>
+                                Questions: 5
+                            </div>
+
+                            <div>
+                                Difficulty: Medium
+                            </div>
+
+                        </div>
+
+                        <button class="btn btn-primary" onclick="selectExam('aptitude')">
+
+                            Start Exam
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- DBMS -->
+
+                <div class="exam-card reveal" data-category="computer">
+
+                    <div class="exam-banner">
+
+                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200" alt="Database">
+
+                    </div>
+
+                    <div class="exam-content">
+
+                        <h3 class="exam-title">
+                            Database Management
+                        </h3>
+
+                        <p>
+                            SQL, Normalization,
+                            Transactions and Queries.
+                        </p>
+
+                        <div class="exam-details">
+
+                            <div>
+                                Subject: DBMS
+                            </div>
+
+                            <div>
+                                Duration: 20 Min
+                            </div>
+
+                            <div>
+                                Questions: 20
+                            </div>
+
+                            <div>
+                                Difficulty: Medium
+                            </div>
+
+                        </div>
+
+                        <button class="btn btn-primary" onclick="selectExam('java')">
+
+                            Start Exam
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- OS -->
+
+                <div class="exam-card reveal" data-category="computer">
+
+                    <div class="exam-banner">
+
+                        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200"
+                            alt="Operating Systems">
+
+                    </div>
+
+                    <div class="exam-content">
+
+                        <h3 class="exam-title">
+                            Operating Systems
+                        </h3>
+
+                        <p>
+                            Processes, Threads,
+                            Scheduling and Memory.
+                        </p>
+
+                        <div class="exam-details">
+
+                            <div>
+                                Subject: OS
+                            </div>
+
+                            <div>
+                                Duration: 20 Min
+                            </div>
+
+                            <div>
+                                Questions: 20
+                            </div>
+
+                            <div>
+                                Difficulty: Advanced
+                            </div>
+
+                        </div>
+
+                        <button class="btn btn-primary" onclick="selectExam('java')">
+
+                            Start Exam
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-top">
+
+                <div class="footer-grid">
+
+                    <div>
+
+                        <h2>
+                            ExamSphere
+                        </h2>
+
+                        <p>
+
+                            Smart Online Examination
+                            Platform for Modern Learning.
+
+                        </p>
+
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Navigation
+                        </h3>
+
+                        <ul class="footer-links">
+
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="exams.html">Exams</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+
+                        </ul>
+
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Exams
+                        </h3>
+
+                        <ul class="footer-links">
+
+                            <li>Java</li>
+                            <li>Web Dev</li>
+                            <li>Aptitude</li>
+                            <li>DBMS</li>
+
+                        </ul>
+
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Platform
+                        </h3>
+
+                        <ul class="footer-links">
+
+                            <li>Leaderboard</li>
+                            <li>History</li>
+                            <li>Analytics</li>
+                            <li>Reports</li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                © <span id="currentYear"></span>
+                ExamSphere. All Rights Reserved.
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+    <div id="cursorGlow"></div>
+
+</body>
+
+</html>

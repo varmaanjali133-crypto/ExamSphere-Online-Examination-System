@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Login | ExamSphere
+    </title>
+
+    <meta name="description"
+        content="Login or create an account on ExamSphere. Access examinations, leaderboards, performance analytics, and learning dashboards.">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="auth-bg"></div>
+
+    <!-- ===================================== -->
+    <!-- LOADER -->
+    <!-- ===================================== -->
+
+    <div class="loader">
+        <div class="loader-circle"></div>
+    </div>
+
+    <!-- ===================================== -->
+    <!-- TOAST CONTAINER -->
+    <!-- ===================================== -->
+
+    <div class="toast-container"></div>
+
+    <!-- ===================================== -->
+    <!-- NAVBAR -->
+    <!-- ===================================== -->
+
+    <nav class="navbar">
+
+        <div class="nav-container">
+
+            <a href="index.html" class="logo">
+
+                <div class="logo-icon">
+                    E
+                </div>
+
+                <h2>
+                    ExamSphere
+                </h2>
+
+            </a>
+
+            <div class="nav-links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="exams.html">
+                    Exams
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+                <a href="login.html" class="nav-active">
+                    Login
+                </a>
+
+            </div>
+
+            <div class="nav-actions">
+
+                <button class="theme-toggle">
+
+                    <i class="fas fa-moon"></i>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- ===================================== -->
+    <!-- AUTH SECTION -->
+    <!-- ===================================== -->
+
+    <section class="auth-section">
+
+        <div class="container">
+
+            <div class="auth-container">
+
+                <!-- ===================================== -->
+                <!-- LEFT CONTENT -->
+                <!-- ===================================== -->
+
+                <div class="auth-left reveal">
+
+                    <span class="badge badge-primary">
+
+                        Welcome To ExamSphere
+
+                    </span>
+
+                    <h1>
+
+                        Smart Online Examination
+                        Platform For Modern Learning
+
+                    </h1>
+
+                    <p>
+
+                        Access professional exams,
+                        performance analytics,
+                        leaderboards, certificates,
+                        and personalized learning
+                        experiences from one powerful
+                        platform.
+
+                    </p>
+
+                    <div class="auth-features">
+
+                        <div class="auth-feature">
+
+                            <i class="fas fa-circle-check"></i>
+
+                            Real-Time Exam Engine
+
+                        </div>
+
+                        <div class="auth-feature">
+
+                            <i class="fas fa-circle-check"></i>
+
+                            Instant Performance Reports
+
+                        </div>
+
+                        <div class="auth-feature">
+
+                            <i class="fas fa-circle-check"></i>
+
+                            Smart Progress Tracking
+
+                        </div>
+
+                        <div class="auth-feature">
+
+                            <i class="fas fa-circle-check"></i>
+
+                            Global Leaderboards
+
+                        </div>
+
+                    </div>
+
+                    <div class="auth-stats">
+
+                        <div class="stat-card">
+
+                            <div class="stat-number">
+
+                                50K+
+
+                            </div>
+
+                            <div class="stat-label">
+
+                                Learners
+
+                            </div>
+
+                        </div>
+
+                        <div class="stat-card">
+
+                            <div class="stat-number">
+
+                                350+
+
+                            </div>
+
+                            <div class="stat-label">
+
+                                Exams
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- ===================================== -->
+                <!-- AUTH CARD -->
+                <!-- ===================================== -->
+
+                <div class="auth-card reveal">
+
+                    <!-- TABS -->
+
+                    <div class="auth-tabs">
+
+                        <button id="loginTab" class="auth-tab active">
+
+                            Login
+
+                        </button>
+
+                        <button id="signupTab" class="auth-tab">
+
+                            Sign Up
+
+                        </button>
+
+                    </div>
+
+                    <!-- ===================================== -->
+                    <!-- LOGIN FORM -->
+                    <!-- ===================================== -->
+
+                    <form id="loginForm" class="auth-form">
+
+                        <div class="section-header text-left">
+
+                            <span>
+
+                                Welcome Back
+
+                            </span>
+
+                            <h2>
+
+                                Login To Account
+
+                            </h2>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label>
+
+                                Email Address
+
+                            </label>
+
+                            <input type="email" id="loginEmail" class="form-control" placeholder="Enter email" required>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label>
+
+                                Password
+
+                            </label>
+
+                            <div class="password-wrapper">
+
+                                <input type="password" id="loginPassword" class="form-control"
+                                    placeholder="Enter password" required>
+
+                            </div>
+
+                        </div>
+
+                        <div class="auth-options">
+
+                            <label>
+
+                                <input type="checkbox">
+
+                                Remember Me
+
+                            </label>
+
+                            <a href="#">
+
+                                Forgot Password?
+
+                            </a>
+
+                        </div>
+
+                        <button type="submit" class="btn btn-primary auth-btn">
+
+                            <i class="fas fa-right-to-bracket"></i>
+
+                            Login
+
+                        </button>
+
+                        <div class="social-login">
+
+                            <button type="button" class="btn btn-outline social-btn">
+
+                                <i class="fab fa-google"></i>
+
+                                Google
+
+                            </button>
+
+                            <button type="button" class="btn btn-outline social-btn">
+
+                                <i class="fab fa-github"></i>
+
+                                GitHub
+
+                            </button>
+
+                        </div>
+
+                    </form>
+
+                    <!-- ===================================== -->
+                    <!-- SIGNUP FORM -->
+                    <!-- ===================================== -->
+
+                    <form id="signupForm" class="auth-form" style="display:none;">
+
+                        <div class="section-header text-left">
+
+                            <span>
+
+                                Create Account
+
+                            </span>
+
+                            <h2>
+
+                                Join ExamSphere
+
+                            </h2>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label>
+
+                                Full Name
+
+                            </label>
+
+                            <input type="text" id="signupName" class="form-control" placeholder="Enter full name"
+                                required>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label>
+
+                                Email Address
+
+                            </label>
+
+                            <input type="email" id="signupEmail" class="form-control" placeholder="Enter email"
+                                required>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label>
+
+                                Password
+
+                            </label>
+
+                            <input type="password" id="signupPassword" class="form-control"
+                                placeholder="Create password" required>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label>
+
+                                Confirm Password
+
+                            </label>
+
+                            <input type="password" id="confirmPassword" class="form-control"
+                                placeholder="Confirm password" required>
+
+                        </div>
+
+                        <button type="submit" class="btn btn-success auth-btn">
+
+                            <i class="fas fa-user-plus"></i>
+
+                            Create Account
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===================================== -->
+    <!-- BENEFITS -->
+    <!-- ===================================== -->
+
+    <section class="section">
+
+        <div class="container">
+
+            <div class="section-header reveal">
+
+                <span>
+
+                    Why Join ExamSphere
+
+                </span>
+
+                <h2>
+
+                    Premium Learning Experience
+
+                </h2>
+
+            </div>
+
+            <div class="features-grid">
+
+                <div class="feature-card reveal">
+
+                    <div class="feature-icon">
+
+                        <i class="fas fa-chart-line"></i>
+
+                    </div>
+
+                    <h3>
+
+                        Performance Analytics
+
+                    </h3>
+
+                    <p>
+
+                        Track your scores,
+                        rankings, and learning
+                        progress.
+
+                    </p>
+
+                </div>
+
+                <div class="feature-card reveal">
+
+                    <div class="feature-icon">
+
+                        <i class="fas fa-trophy"></i>
+
+                    </div>
+
+                    <h3>
+
+                        Leaderboards
+
+                    </h3>
+
+                    <p>
+
+                        Compete with learners
+                        worldwide and improve
+                        your rankings.
+
+                    </p>
+
+                </div>
+
+                <div class="feature-card reveal">
+
+                    <div class="feature-icon">
+
+                        <i class="fas fa-certificate"></i>
+
+                    </div>
+
+                    <h3>
+
+                        Certifications
+
+                    </h3>
+
+                    <p>
+
+                        Build credibility with
+                        assessments and skill
+                        validation.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===================================== -->
+    <!-- FOOTER -->
+    <!-- ===================================== -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-top">
+
+                <div class="footer-grid">
+
+                    <div>
+
+                        <div class="footer-logo">
+
+                            <a href="index.html" class="logo">
+
+                                <div class="logo-icon">
+                                    E
+                                </div>
+
+                                <h2>
+                                    ExamSphere
+                                </h2>
+
+                            </a>
+
+                        </div>
+
+                        <p>
+
+                            Smart Online Examination
+                            Platform for Modern Learning.
+
+                        </p>
+
+                    </div>
+
+                    <div>
+
+                        <h3>
+
+                            Navigation
+
+                        </h3>
+
+                        <ul class="footer-links">
+
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+
+                            <li>
+                                <a href="exams.html">Exams</a>
+                            </li>
+
+                            <li>
+                                <a href="about.html">About</a>
+                            </li>
+
+                            <li>
+                                <a href="contact.html">Contact</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <div>
+
+                        <h3>
+
+                            Platform
+
+                        </h3>
+
+                        <ul class="footer-links">
+
+                            <li>Analytics</li>
+                            <li>Leaderboard</li>
+                            <li>History</li>
+                            <li>Results</li>
+
+                        </ul>
+
+                    </div>
+
+                    <div>
+
+                        <h3>
+
+                            Exams
+
+                        </h3>
+
+                        <ul class="footer-links">
+
+                            <li>Java</li>
+                            <li>Web Development</li>
+                            <li>Aptitude</li>
+                            <li>DBMS</li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                ©
+                <span id="currentYear"></span>
+
+                ExamSphere.
+                All Rights Reserved.
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+    <script>
+
+        const loginTab =
+            document.getElementById(
+                "loginTab"
+            );
+
+        const signupTab =
+            document.getElementById(
+                "signupTab"
+            );
+
+        const loginForm =
+            document.getElementById(
+                "loginForm"
+            );
+
+        const signupForm =
+            document.getElementById(
+                "signupForm"
+            );
+
+        loginTab.addEventListener(
+            "click",
+            () => {
+
+                loginTab.classList.add(
+                    "active"
+                );
+
+                signupTab.classList.remove(
+                    "active"
+                );
+
+                loginForm.style.display =
+                    "block";
+
+                signupForm.style.display =
+                    "none";
+
+            }
+        );
+
+        signupTab.addEventListener(
+            "click",
+            () => {
+
+                signupTab.classList.add(
+                    "active"
+                );
+
+                loginTab.classList.remove(
+                    "active"
+                );
+
+                signupForm.style.display =
+                    "block";
+
+                loginForm.style.display =
+                    "none";
+
+            }
+        );
+
+        signupForm.addEventListener(
+            "submit",
+            function (e) {
+
+                e.preventDefault();
+
+                const user = {
+
+                    name:
+                        document.getElementById(
+                            "signupName"
+                        ).value,
+
+                    email:
+                        document.getElementById(
+                            "signupEmail"
+                        ).value
+
+                };
+
+                localStorage.setItem(
+                    "examSphereUser",
+                    JSON.stringify(user)
+                );
+                localStorage.setItem(
+                    "isLoggedIn",
+                    "true"
+                );
+
+                if (
+                    typeof showToast ===
+                    "function"
+                ) {
+
+                    showToast(
+                        "Account created successfully!",
+                        "success"
+                    );
+
+                }
+
+                setTimeout(() => {
+
+                    window.location.href =
+                        "index.html";
+
+                }, 1200);
+
+            }
+        );
+
+        loginForm.addEventListener(
+            "submit",
+            function (e) {
+
+                e.preventDefault();
+
+                const loginUser = {
+
+                    name:
+                        document.getElementById(
+                            "loginEmail"
+                        ).value.split("@")[0]
+
+                };
+
+                localStorage.setItem(
+                    "examSphereUser",
+                    JSON.stringify(loginUser)
+                );
+
+                localStorage.setItem(
+                    "isLoggedIn",
+                    "true"
+                );
+
+                if (
+                    typeof showToast ===
+                    "function"
+                ) {
+
+                    showToast(
+                        "Login successful!",
+                        "success"
+                    );
+
+                }
+
+                setTimeout(() => {
+
+                    window.location.href =
+                        "index.html";
+
+                }, 1000);
+
+            }
+        );
+
+    </script>
+
+</body>
+
+</html>

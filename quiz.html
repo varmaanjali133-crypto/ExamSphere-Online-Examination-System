@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ExamSphere | Online Examination</title>
+
+    <meta name="description" content="Take professional online examinations with ExamSphere.">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- ===================================== -->
+    <!-- LOADER -->
+    <!-- ===================================== -->
+
+    <div class="loader">
+        <div class="loader-circle"></div>
+    </div>
+
+    <!-- ===================================== -->
+    <!-- NAVBAR -->
+    <!-- ===================================== -->
+
+    <nav class="navbar">
+
+        <div class="nav-container">
+
+            <a href="index.html" class="logo">
+
+                <div class="logo-icon">
+                    E
+                </div>
+
+                <h2>
+                    ExamSphere
+                </h2>
+
+            </a>
+
+            <div class="nav-links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="exams.html">
+                    Exams
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+            <div class="nav-actions">
+
+                <button class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- ===================================== -->
+    <!-- QUIZ SECTION -->
+    <!-- ===================================== -->
+
+    <section class="quiz-layout">
+
+        <div class="container">
+
+            <div id="quizApp" class="quiz-grid">
+
+                <!-- ===================================== -->
+                <!-- SIDEBAR -->
+                <!-- ===================================== -->
+
+                <aside class="quiz-sidebar">
+
+                    <!-- TIMER -->
+
+                    <div class="timer-card">
+
+                        <div class="timer-label">
+
+                            Remaining Time
+
+                        </div>
+
+                        <div id="timer" class="timer">
+
+                            15:00
+
+                        </div>
+
+                    </div>
+
+                    <!-- PROGRESS -->
+
+                    <div class="progress-wrapper">
+
+                        <div class="progress-header">
+
+                            <span>
+                                Progress
+                            </span>
+
+                            <span id="progressText">
+
+                                0% Completed
+
+                            </span>
+
+                        </div>
+
+                        <div class="progress-track">
+
+                            <div id="progressBar" class="progress-fill">
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- QUESTION NAVIGATOR -->
+
+                    <h3 style="margin-bottom:15px;">
+
+                        Question Navigator
+
+                    </h3>
+
+                    <div id="questionPalette" class="question-palette">
+
+                        <!-- Rendered by JS -->
+
+                    </div>
+
+                    <!-- QUIZ INFO -->
+
+                    <div class="quiz-info">
+
+                        <div class="quiz-info-item">
+
+                            <span>
+                                Exam
+                            </span>
+
+                            <strong>
+                                Online Test
+                            </strong>
+
+                        </div>
+
+                        <div class="quiz-info-item">
+
+                            <span>
+                                Questions
+                            </span>
+
+                            <strong>
+                                5
+                            </strong>
+
+                        </div>
+
+                        <div class="quiz-info-item">
+
+                            <span>
+                                Duration
+                            </span>
+
+                            <strong>
+                                15 Min
+                            </strong>
+
+                        </div>
+
+                        <div class="quiz-info-item">
+
+                            <span>
+                                Auto Submit
+                            </span>
+
+                            <strong>
+                                Enabled
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </aside>
+
+                <!-- ===================================== -->
+                <!-- MAIN QUIZ PANEL -->
+                <!-- ===================================== -->
+
+                <main class="quiz-main">
+
+                    <!-- QUESTION HEADER -->
+
+                    <div id="questionNumber" class="question-number">
+
+                        Question 1 of 5
+
+                    </div>
+
+                    <!-- QUESTION -->
+
+                    <h2 id="questionTitle" class="question-title">
+
+                        Loading Question...
+
+                    </h2>
+
+                    <!-- OPTIONS -->
+
+                    <div id="optionsContainer" class="options">
+
+                        <!-- Rendered by JS -->
+
+                    </div>
+
+                    <!-- CONTROLS -->
+
+                    <div class="quiz-controls">
+
+                        <button id="prevBtn" class="btn btn-outline">
+
+                            <i class="fas fa-arrow-left"></i>
+
+                            Previous
+
+                        </button>
+
+                        <button id="nextBtn" class="btn btn-primary">
+
+                            Next
+
+                            <i class="fas fa-arrow-right"></i>
+
+                        </button>
+
+                    </div>
+
+                    <!-- SUBMIT -->
+
+                    <div style="margin-top:25px;text-align:center;">
+
+                        <button id="submitQuiz" class="btn btn-success">
+
+                            <i class="fas fa-paper-plane"></i>
+
+                            Submit Exam
+
+                        </button>
+
+                    </div>
+
+                </main>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===================================== -->
+    <!-- QUICK EXAM RULES -->
+    <!-- ===================================== -->
+
+    <section class="section">
+
+        <div class="container">
+
+            <div class="glass-card reveal">
+
+                <div class="section-header">
+
+                    <span>
+                        Examination Rules
+                    </span>
+
+                    <h2>
+                        Important Instructions
+                    </h2>
+
+                </div>
+
+                <div class="features-grid">
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+
+                            <i class="fas fa-clock"></i>
+
+                        </div>
+
+                        <h3>
+                            Timed Assessment
+                        </h3>
+
+                        <p>
+
+                            The exam automatically
+                            submits when the timer
+                            reaches zero.
+
+                        </p>
+
+                    </div>
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+
+                            <i class="fas fa-list-check"></i>
+
+                        </div>
+
+                        <h3>
+                            Multiple Choice
+                        </h3>
+
+                        <p>
+
+                            Each question contains
+                            one correct answer.
+
+                        </p>
+
+                    </div>
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+
+                            <i class="fas fa-chart-line"></i>
+
+                        </div>
+
+                        <h3>
+                            Instant Results
+                        </h3>
+
+                        <p>
+
+                            Receive immediate
+                            performance analysis
+                            after submission.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===================================== -->
+    <!-- FOOTER -->
+    <!-- ===================================== -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-top">
+
+                <div class="footer-grid">
+
+                    <div>
+
+                        <div class="footer-logo">
+
+                            <a href="index.html" class="logo">
+
+                                <div class="logo-icon">
+                                    E
+                                </div>
+
+                                <h2>
+                                    ExamSphere
+                                </h2>
+
+                            </a>
+
+                        </div>
+
+                        <p>
+
+                            Smart Online Examination
+                            Platform for Modern Learning.
+
+                        </p>
+
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Navigation
+                        </h3>
+
+                        <ul class="footer-links">
+
+                            <li>
+                                <a href="index.html">
+                                    Home
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="exams.html">
+                                    Exams
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="about.html">
+                                    About
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="contact.html">
+                                    Contact
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Categories
+                        </h3>
+
+                        <ul class="footer-links">
+
+                            <li>
+                                Programming
+                            </li>
+
+                            <li>
+                                Aptitude
+                            </li>
+
+                            <li>
+                                Databases
+                            </li>
+
+                            <li>
+                                Computer Science
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Platform
+                        </h3>
+
+                        <ul class="footer-links">
+
+                            <li>
+                                Leaderboard
+                            </li>
+
+                            <li>
+                                Analytics
+                            </li>
+
+                            <li>
+                                Results
+                            </li>
+
+                            <li>
+                                Dashboard
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                ©
+                <span id="currentYear"></span>
+
+                ExamSphere.
+                All Rights Reserved.
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- ===================================== -->
+    <!-- SCRIPT -->
+    <!-- ===================================== -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

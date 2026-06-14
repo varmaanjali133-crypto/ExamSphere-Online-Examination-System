@@ -1,0 +1,1366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ExamSphere | Smart Online Examination Platform</title>
+
+    <meta name="description"
+        content="ExamSphere - Premium Online Examination Platform for Modern Learning, Assessments, Certifications and Skill Evaluation.">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- ===================================== -->
+    <!-- LOADER -->
+    <!-- ===================================== -->
+
+    <div class="loader">
+        <div class="loader-circle"></div>
+    </div>
+
+    <!-- ===================================== -->
+    <!-- TOAST CONTAINER -->
+    <!-- ===================================== -->
+
+    <div class="toast-container"></div>
+
+    <!-- ===================================== -->
+    <!-- NAVBAR -->
+    <!-- ===================================== -->
+
+    <nav class="navbar">
+
+        <div class="nav-container">
+
+            <a href="index.html" class="logo">
+
+                <div class="logo-icon">
+                    E
+                </div>
+
+                <h2>ExamSphere</h2>
+
+            </a>
+
+            <div class="nav-links">
+
+                <a href="index.html" class="nav-active">Home</a>
+
+                <a href="exams.html">Exams</a>
+
+                <a href="about.html">About</a>
+
+                <a href="contact.html">Contact</a>
+
+                <a href="login.html">Login</a>
+
+            </div>
+
+            <div class="nav-actions">
+
+                <button class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+
+                <a href="login.html" class="btn btn-primary">
+                    Get Started
+                </a>
+
+                <button class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- ===================================== -->
+    <!-- HERO SECTION -->
+    <!-- ===================================== -->
+
+    <section class="hero">
+
+        <div class="container">
+
+            <div class="hero-grid">
+
+                <!-- HERO CONTENT -->
+
+                <div class="hero-content reveal">
+
+                    <div class="hero-badge">
+
+                        <i class="fas fa-bolt"></i>
+
+                        Trusted by Students & Institutions
+
+                    </div>
+
+                    <h1>
+                        Smart Online Examination Platform
+                        for Modern Learning
+                    </h1>
+                    <div id="welcomeBanner"></div>
+
+                    <p>
+
+                        Experience next-generation online assessments with
+                        intelligent quizzes, real-time analytics, secure
+                        examinations, leaderboard rankings, performance
+                        tracking, and professional certification workflows.
+
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="exams.html" class="btn btn-primary">
+
+                            <i class="fas fa-graduation-cap"></i>
+
+                            Explore Exams
+
+                        </a>
+
+                        <a href="#features" class="btn btn-outline">
+
+                            <i class="fas fa-play-circle"></i>
+
+                            Learn More
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- HERO DASHBOARD -->
+
+                <div class="hero-dashboard reveal">
+
+                    <div class="dashboard-card">
+
+                        <div class="dashboard-top">
+
+                            <div class="dashboard-user">
+
+                                <div class="user-avatar">
+                                    ES
+                                </div>
+
+                                <div>
+
+                                    <strong id="welcomeUser">
+                                        Welcome, Learner
+                                    </strong>
+
+                                    <p>
+                                        Premium Examination Dashboard
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="status-pill">
+                                Online
+                            </div>
+
+                        </div>
+
+                        <div class="widget-grid">
+
+                            <div class="widget primary">
+
+                                <h4>Total Exams</h4>
+
+                                <h3 id="totalExams">12</h3>
+
+                            </div>
+
+                            <div class="widget success">
+
+                                <h4>Average Score</h4>
+
+                                <h3 id="averageScore">92%</h3>
+
+                            </div>
+
+                            <div class="widget accent">
+
+                                <h4>Best Score</h4>
+
+                                <h3 id="bestScore">98%</h3>
+
+                            </div>
+
+                            <div class="widget primary">
+
+                                <h4>Certificates</h4>
+
+                                <h3 id="certificatesEarned">6</h3>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="floating-card float-card-1">
+
+                        <i class="fas fa-trophy"></i>
+
+                        <div>
+
+                            <strong>#1 Rank</strong>
+
+                            <p>Top Performer</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="floating-card float-card-2">
+
+                        <i class="fas fa-chart-line"></i>
+
+                        <div>
+
+                            <strong>+35%</strong>
+
+                            <p>Performance Growth</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===================================== -->
+    <!-- STATS SECTION -->
+    <!-- ===================================== -->
+
+    <section class="stats">
+
+        <div class="container">
+
+            <div class="stats-grid">
+
+                <div class="stat-card reveal">
+
+                    <div class="stat-number counter" data-target="50000">0</div>
+
+                    <div class="stat-label">
+                        Registered Students
+                    </div>
+
+                </div>
+
+                <div class="stat-card reveal">
+
+                    <div class="stat-number counter" data-target="1200">0</div>
+
+                    <div class="stat-label">
+                        Active Institutions
+                    </div>
+
+                </div>
+
+                <div class="stat-card reveal">
+
+                    <div class="stat-number counter" data-target="350">0</div>
+
+                    <div class="stat-label">
+                        Professional Exams
+                    </div>
+
+                </div>
+
+                <div class="stat-card reveal">
+
+                    <div class="stat-number counter" data-target="98">0</div>
+
+                    <div class="stat-label">
+                        Success Rate %
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===================================== -->
+    <!-- FEATURES SECTION -->
+    <!-- ===================================== -->
+
+    <section class="section" id="features">
+
+        <div class="container">
+
+            <div class="section-header reveal">
+
+                <span>
+                    Why ExamSphere
+                </span>
+
+                <h2>
+                    Built for Modern Education &
+                    Professional Assessments
+                </h2>
+
+                <p>
+
+                    Powerful examination infrastructure designed
+                    for schools, colleges, universities, EdTech
+                    platforms, recruitment teams, and certification
+                    providers.
+
+                </p>
+
+            </div>
+
+            <div class="features-grid">
+
+                <div class="feature-card reveal">
+
+                    <div class="feature-icon">
+
+                        <i class="fas fa-brain"></i>
+
+                    </div>
+
+                    <h3>
+                        Smart Evaluation
+                    </h3>
+
+                    <p>
+
+                        Automated assessment engine with instant
+                        scoring, feedback, and analytics.
+
+                    </p>
+
+                </div>
+
+                <div class="feature-card reveal">
+
+                    <div class="feature-icon">
+
+                        <i class="fas fa-clock"></i>
+
+                    </div>
+
+                    <h3>
+                        Real-Time Monitoring
+                    </h3>
+
+                    <p>
+
+                        Timer-based examination workflow with
+                        progress tracking and auto-submission.
+
+                    </p>
+
+                </div>
+
+                <div class="feature-card reveal">
+
+                    <div class="feature-icon">
+
+                        <i class="fas fa-chart-pie"></i>
+
+                    </div>
+
+                    <h3>
+                        Performance Analytics
+                    </h3>
+
+                    <p>
+
+                        Gain deep insights through visual reports,
+                        score history, and comparative metrics.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- ===================================== -->
+    <!-- WHY CHOOSE US -->
+    <!-- ===================================== -->
+
+    <section class="section">
+
+        <div class="container">
+
+            <div class="why-grid">
+
+                <div class="why-content reveal">
+
+                    <div class="section-header text-left">
+
+                        <span>
+                            Platform Excellence
+                        </span>
+
+                        <h2>
+                            Everything Needed For
+                            Modern Online Examinations
+                        </h2>
+
+                    </div>
+
+                    <ul>
+
+                        <li>
+                            <i class="fas fa-check"></i>
+                            AI-inspired assessment workflow
+                        </li>
+
+                        <li>
+                            <i class="fas fa-check"></i>
+                            Secure timed examinations
+                        </li>
+
+                        <li>
+                            <i class="fas fa-check"></i>
+                            Real-time score calculation
+                        </li>
+
+                        <li>
+                            <i class="fas fa-check"></i>
+                            Leaderboard and ranking system
+                        </li>
+
+                        <li>
+                            <i class="fas fa-check"></i>
+                            Exam history tracking
+                        </li>
+
+                        <li>
+                            <i class="fas fa-check"></i>
+                            Mobile-first responsive interface
+                        </li>
+
+                        <li>
+                            <i class="fas fa-check"></i>
+                            Fast and scalable architecture
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div class="why-image reveal">
+
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1200"
+                        alt="Students Learning">
+
+                    <div class="why-badge">
+
+                        <strong>
+                            98% Student Satisfaction
+                        </strong>
+
+                        <p>
+                            Trusted Learning Experience
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===================================== -->
+    <!-- DASHBOARD METRICS -->
+    <!-- ===================================== -->
+
+    <section class="section">
+
+        <div class="container">
+
+            <div class="section-header reveal">
+
+                <span>
+                    Dashboard Insights
+                </span>
+
+                <h2>
+                    Learning Analytics At A Glance
+                </h2>
+
+                <p>
+
+                    Monitor examinations, learner engagement,
+                    completion rates, and academic performance
+                    from a unified dashboard.
+
+                </p>
+
+            </div>
+
+            <div class="dashboard-section">
+
+                <div class="dashboard-widget reveal">
+
+                    <small>
+                        Exams Attempted
+                    </small>
+
+                    <h3>
+                        124K
+                    </h3>
+
+                </div>
+
+                <div class="dashboard-widget reveal">
+
+                    <small>
+                        Questions Answered
+                    </small>
+
+                    <h3>
+                        3.8M
+                    </h3>
+
+                </div>
+
+                <div class="dashboard-widget reveal">
+
+                    <small>
+                        Certifications Issued
+                    </small>
+
+                    <h3>
+                        28K
+                    </h3>
+
+                </div>
+
+                <div class="dashboard-widget reveal">
+
+                    <small>
+                        Active Learners
+                    </small>
+
+                    <h3>
+                        50K+
+                    </h3>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===================================== -->
+    <!-- EXAMS PREVIEW -->
+    <!-- ===================================== -->
+
+    <section class="section">
+
+        <div class="container">
+
+            <div class="section-header reveal">
+
+                <span>
+                    Popular Exams
+                </span>
+
+                <h2>
+                    Explore Industry-Relevant Assessments
+                </h2>
+
+                <p>
+
+                    Test your knowledge with carefully curated
+                    assessments covering programming, aptitude,
+                    databases, operating systems, and more.
+
+                </p>
+
+            </div>
+
+            <div class="exams-grid">
+
+                <!-- Java -->
+
+                <div class="exam-card reveal">
+
+                    <div class="exam-banner">
+
+                        <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=1200"
+                            alt="Java Fundamentals">
+
+                        <div class="exam-overlay"></div>
+
+                    </div>
+
+                    <div class="exam-content">
+
+                        <div class="exam-header">
+
+                            <h3 class="exam-title">
+                                Java Fundamentals
+                            </h3>
+
+                            <span class="badge badge-primary">
+                                Coding
+                            </span>
+
+                        </div>
+
+                        <p>
+
+                            Core Java concepts, OOP,
+                            collections, multithreading,
+                            and JVM fundamentals.
+
+                        </p>
+
+                        <div class="exam-footer">
+
+                            <span class="difficulty easy">
+                                Beginner
+                            </span>
+
+                            <a href="exams.html" class="btn btn-primary">
+
+                                View
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Web -->
+
+                <div class="exam-card reveal">
+
+                    <div class="exam-banner">
+
+                        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=1200"
+                            alt="Web Development">
+
+                        <div class="exam-overlay"></div>
+
+                    </div>
+
+                    <div class="exam-content">
+
+                        <div class="exam-header">
+
+                            <h3 class="exam-title">
+                                Web Development
+                            </h3>
+
+                            <span class="badge badge-accent">
+                                Frontend
+                            </span>
+
+                        </div>
+
+                        <p>
+
+                            HTML, CSS, JavaScript,
+                            responsive design,
+                            and UI development.
+
+                        </p>
+
+                        <div class="exam-footer">
+
+                            <span class="difficulty medium">
+                                Intermediate
+                            </span>
+
+                            <a href="exams.html" class="btn btn-primary">
+
+                                View
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Aptitude -->
+
+                <div class="exam-card reveal">
+
+                    <div class="exam-banner">
+
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200" alt="Aptitude">
+
+                        <div class="exam-overlay"></div>
+
+                    </div>
+
+                    <div class="exam-content">
+
+                        <div class="exam-header">
+
+                            <h3 class="exam-title">
+                                Aptitude Test
+                            </h3>
+
+                            <span class="badge badge-success">
+                                Placement
+                            </span>
+
+                        </div>
+
+                        <p>
+
+                            Quantitative aptitude,
+                            logical reasoning,
+                            and analytical thinking.
+
+                        </p>
+
+                        <div class="exam-footer">
+
+                            <span class="difficulty medium">
+                                Intermediate
+                            </span>
+
+                            <a href="exams.html" class="btn btn-primary">
+
+                                View
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div style="text-align:center;margin-top:50px;">
+
+                <a href="exams.html" class="btn btn-primary">
+
+                    View All Exams
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- ===================================== -->
+    <!-- LEADERBOARD SECTION -->
+    <!-- ===================================== -->
+
+    <section class="section">
+
+        <div class="container">
+
+            <div class="section-header reveal">
+
+                <span>
+                    Top Achievers
+                </span>
+
+                <h2>
+                    Student Leaderboard
+                </h2>
+
+                <p>
+
+                    Celebrate excellence and discover the
+                    highest-performing learners on the platform.
+
+                </p>
+
+            </div>
+
+            <div class="glass-card reveal">
+
+                <div class="leaderboard-header">
+
+                    <h3>
+                        Global Rankings
+                    </h3>
+
+                    <span class="badge badge-primary">
+                        Updated Live
+                    </span>
+
+                </div>
+
+                <div id="leaderboardList">
+
+                    <!-- Rendered By JavaScript -->
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===================================== -->
+    <!-- EXAM HISTORY PREVIEW -->
+    <!-- ===================================== -->
+
+    <section class="section">
+
+        <div class="container">
+
+            <div class="section-header reveal">
+
+                <span>
+                    Progress Tracking
+                </span>
+
+                <h2>
+                    Exam History Dashboard
+                </h2>
+
+                <p>
+
+                    Keep track of all your previous attempts,
+                    performance scores, and learning growth.
+
+                </p>
+
+            </div>
+
+            <div class="glass-card reveal">
+
+                <div class="table-responsive">
+
+                    <table class="history-table">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>
+                                    Exam
+                                </th>
+
+                                <th>
+                                    Score
+                                </th>
+
+                                <th>
+                                    Percentage
+                                </th>
+
+                                <th>
+                                    Date
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody id="historyTableBody">
+
+                            <!-- JavaScript Injected -->
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===================================== -->
+    <!-- TESTIMONIALS -->
+    <!-- ===================================== -->
+
+    <section class="section">
+
+        <div class="container">
+
+            <div class="section-header reveal">
+
+                <span>
+                    Success Stories
+                </span>
+
+                <h2>
+                    What Learners Say About ExamSphere
+                </h2>
+
+                <p>
+
+                    Thousands of students trust ExamSphere
+                    for preparation, practice, assessments,
+                    and certification exams.
+
+                </p>
+
+            </div>
+
+            <div class="testimonial-grid">
+
+                <!-- Testimonial 1 -->
+
+                <div class="testimonial-card reveal">
+
+                    <div class="testimonial-top">
+
+                        <div class="testimonial-avatar">
+                            A
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Aarav Sharma
+                            </h3>
+
+                            <span>
+                                Software Engineering Student
+                            </span>
+
+                        </div>
+
+                    </div>
+                    <br>
+
+                    <p>
+
+                        ExamSphere transformed my exam
+                        preparation. The analytics dashboard,
+                        performance reports, and realistic
+                        assessments helped me significantly
+                        improve my scores.
+
+                    </p>
+
+                    <div class="rating">
+
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+
+                    </div>
+
+                </div>
+
+                <!-- Testimonial 2 -->
+
+                <div class="testimonial-card reveal">
+
+                    <div class="testimonial-top">
+
+                        <div class="testimonial-avatar">
+                            P
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Priya Verma
+                            </h3>
+                            
+                            <span>
+                                Placement Aspirant
+                            </span>
+
+                        </div>
+
+                    </div>
+                    <br>
+
+                    <p>
+
+                        The aptitude and coding assessments
+                        mirror real placement exams.
+                        The user experience feels premium
+                        and incredibly professional.
+
+                    </p>
+
+                    <div class="rating">
+
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+
+                    </div>
+
+                </div>
+
+                <!-- Testimonial 3 -->
+
+                <div class="testimonial-card reveal">
+
+                    <div class="testimonial-top">
+
+                        <div class="testimonial-avatar">
+                            R
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Rahul Mehta
+                            </h3>
+
+                            <span>
+                                Full Stack Developer
+                            </span>
+
+                        </div>
+
+                    </div>
+                    <br>
+
+                    <p>
+
+                        One of the most polished educational
+                        platforms I have used. The exam
+                        workflow, leaderboard system, and
+                        reports are outstanding.
+
+                    </p>
+
+                    <div class="rating">
+
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===================================== -->
+    <!-- CTA SECTION -->
+    <!-- ===================================== -->
+
+    <section class="section">
+
+        <div class="container">
+
+            <div class="cta-card reveal">
+
+                <div class="cta-content">
+
+                    <span>
+                        Start Learning Today
+                    </span>
+                    <br>
+                    <h2>
+
+                        Take Your Skills To The Next Level
+                        With Smart Assessments
+
+                    </h2>
+                    <br>
+
+                    <p>
+
+                        Join thousands of learners using
+                        ExamSphere to prepare for academic,
+                        professional, and recruitment exams.
+
+                    </p>
+                    <br>
+
+                    <div class="hero-buttons">
+
+                        <a href="exams.html" class="btn btn-primary">
+
+                            Start Exam
+
+                        </a>
+
+                        <a href="login.html" class="btn btn-outline">
+
+                            Create Account
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- ===================================== -->
+    <!-- FOOTER -->
+    <!-- ===================================== -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-top">
+
+                <div class="footer-grid">
+
+                    <!-- Brand -->
+
+                    <div>
+
+                        <div class="footer-logo">
+
+                            <a href="index.html" class="logo">
+
+                                <div class="logo-icon">
+                                    E
+                                </div>
+
+                                <h2>
+                                    ExamSphere
+                                </h2>
+
+                            </a>
+
+                        </div>
+
+                        <p>
+
+                            Smart Online Examination Platform
+                            for Modern Learning.
+
+                            ExamSphere helps students,
+                            institutions, and organizations
+                            conduct secure, scalable, and
+                            insightful assessments.
+
+                        </p>
+
+                        <div class="footer-social">
+
+                            <a href="#" class="social-icon">
+
+                                <i class="fab fa-facebook-f"></i>
+
+                            </a>
+
+                            <a href="#" class="social-icon">
+
+                                <i class="fab fa-instagram"></i>
+
+                            </a>
+
+                            <a href="#" class="social-icon">
+
+                                <i class="fab fa-linkedin-in"></i>
+
+                            </a>
+
+                            <a href="#" class="social-icon">
+
+                                <i class="fab fa-github"></i>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Quick Links -->
+
+                    <div>
+
+                        <h3>
+                            Quick Links
+                        </h3>
+
+                        <ul class="footer-links">
+
+                            <li>
+                                <a href="index.html">
+                                    Home
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="exams.html">
+                                    Exams
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="about.html">
+                                    About Us
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="contact.html">
+                                    Contact
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <!-- Exams -->
+
+                    <div>
+
+                        <h3>
+                            Popular Exams
+                        </h3>
+
+                        <ul class="footer-links">
+
+                            <li>
+                                <a href="exams.html">
+                                    Java Fundamentals
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="exams.html">
+                                    Web Development
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="exams.html">
+                                    Data Structures
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="exams.html">
+                                    Aptitude Test
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <!-- Platform -->
+
+                    <div>
+
+                        <h3>
+                            Platform
+                        </h3>
+
+                        <ul class="footer-links">
+
+                            <li>
+                                <a href="login.html">
+                                    Login
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="login.html">
+                                    Sign Up
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    Leaderboard
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    Certification
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                <p>
+
+                    © <span id="currentYear"></span>
+                    ExamSphere. All Rights Reserved.
+
+                    Designed for Modern Learning &
+                    Smart Online Examinations.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- ===================================== -->
+    <!-- JAVASCRIPT -->
+    <!-- ===================================== -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
