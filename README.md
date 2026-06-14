@@ -31,8 +31,8 @@ This project was developed to understand the practical implementation of online 
 
 ## Live Demo
 
-[Add GitHub Pages Link]
+https://varmaanjali133-crypto.github.io/ExamSphere-Online-Examination-System/
 
 ## GitHub Repository
 
-[Add Repository Link]
+https://github.com/varmaanjali133-crypto/ExamSphere-Online-Examination-System.git
