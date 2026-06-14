@@ -1,2 +1,38 @@
-# ExamSphere-Online-Examination-System
-A modern and responsive Online Examination System built with HTML, CSS, and JavaScript featuring quizzes, timers, result tracking, dashboards, and a premium EdTech-inspired UI.
+# ExamSphere – Online Examination System
+
+ExamSphere is a modern and responsive Online Examination System designed to simulate real-world digital assessment platforms used by schools, colleges, coaching institutes, and organizations.
+
+Built using HTML, CSS, and JavaScript, the platform provides an engaging examination experience with interactive quizzes, real-time timers, instant result calculation, performance tracking, and a premium SaaS-inspired user interface.
+
+## Features
+
+* Modern and Responsive Design
+* Interactive Quiz & Examination Interface
+* Real-Time Countdown Timer
+* Instant Result Generation
+* Score & Performance Analytics
+* Login / Authentication UI
+* Leaderboard System
+* Exam Dashboard
+* Smooth Animations & Transitions
+* Mobile, Tablet & Desktop Friendly
+* Professional EdTech UI/UX
+
+## Technologies Used
+
+* HTML5
+* CSS3
+* JavaScript
+* LocalStorage
+
+## Project Objective
+
+This project was developed to understand the practical implementation of online examination systems while strengthening frontend development, responsive design, JavaScript logic building, and UI/UX design skills.
+
+## Live Demo
+
+[Add GitHub Pages Link]
+
+## GitHub Repository
+
+[Add Repository Link]
